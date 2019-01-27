@@ -1,14 +1,25 @@
-fioriHtmlRunner.html
-.*/fioriHtmlRunner.html
-visual_ext_index.html
-/webapp/visual_ext_index.html
-extended_runnable_file.html
-.*/extended_runnable_file.html
-sap-ui-cachebuster-info.json
-mock_preview_sapui5.html
-.*/mock_preview_sapui5.html
-UIAdaptation_index.html
-changes_preview.js
-AppVariant_index.html
-APIExternalProducer.js
-.*/APIExternalProducer.js
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/

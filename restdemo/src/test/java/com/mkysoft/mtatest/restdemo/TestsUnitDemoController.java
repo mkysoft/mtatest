@@ -12,18 +12,20 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
+import com.mkysoft.mtatest.restdemo.web.DemoController;
+
 @RunWith(SpringRunner.class)
-@WebMvcTest(controllers = HelloController.class)
-@ContextConfiguration(classes = HelloController.class)
-public class TestsUnitHelloController {
+@WebMvcTest(controllers = DemoController.class)
+@ContextConfiguration(classes = DemoController.class)
+public class TestsUnitDemoController {
 
   @Autowired
   private MockMvc restTemplate;
 
   @Test
-  public void exampleTest() throws Exception {
-    MvcResult result = this.restTemplate.perform(get("/")).andReturn();
+  public void testTest() throws Exception {
+    MvcResult result = this.restTemplate.perform(get("/test")).andReturn();
     String content = result.getResponse().getContentAsString();
-    assertThat(content).startsWith("Hello World");
+    assertThat(content).startsWith("hello");
   }
 }
